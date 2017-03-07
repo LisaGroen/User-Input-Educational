@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.lisag.userinputeducational.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="790dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/achtergrond2"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:context="com.lisag.userinputeducational.MainActivity"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Je hebt 50 knikkers. Je verliest er 36 en wint er 16. Hoeveel knikkers heb je over?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/vraag1" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RadioButton
+            android:text="33 knikkers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:onClick="checkVraag1"/>
+
+        <RadioButton
+            android:text="28 knikkers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkVraag1"/>
+
+        <RadioButton
+            android:text="30 knikkers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:onClick="checkVraag1"
+            android:id="@+id/goed1"/>
+        </RadioGroup>
+
+        <TextView
+            android:text="115 - 15 x 10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/vraag2" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RadioButton
+            android:text="-45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:onClick="checkVraag2"/>
+
+        <RadioButton
+            android:text="-35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkVraag2"
+            android:id="@+id/goed2" />
+
+        <RadioButton
+            android:text="1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:onClick="checkVraag2"/>
+        </RadioGroup>
+
+        <TextView
+            android:text="Je nodigt 19 kinderen uit. 1 kind is ziek, en 3 andere kinderen kunnen niet komen. Hoeveel kinderen komen?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/vraag3" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RadioButton
+            android:text="16 kinderen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:onClick="checkVraag3"/>
+
+        <RadioButton
+            android:text="13 kinderen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkVraag3"/>
+
+        <RadioButton
+            android:text="15 kinderen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:onClick="checkVraag3"
+            android:id="@+id/goed3" />
+        </RadioGroup>
+
+        <TextView
+            android:text="15 x 6 - 3 x 4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/vraag4" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RadioButton
+            android:text="78"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:onClick="checkVraag4"
+            android:id="@+id/goed4" />
+
+        <RadioButton
+            android:text="75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkVraag4"/>
+
+        <RadioButton
+            android:text="83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:onClick="checkVraag4"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
